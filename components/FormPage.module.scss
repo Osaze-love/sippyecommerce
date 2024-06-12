@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding: 10px 70px;
+  padding: 40px 70px;
   div {
     display: flex;
     flex-direction: column;
@@ -10,9 +10,6 @@
   .formName {
     display: flex;
     flex-direction: row;
-    input {
-      width: 100vw;
-    }
   }
   .last {
     padding: 10px 10px;
