@@ -26,6 +26,7 @@ const Navbar = () => {
               onClick={() => {
                 setToggleNav(false);
                 document.body.classList.remove("modal-open");
+                router.push("/");
               }}
               className="toggleLink"
             >
@@ -35,6 +36,7 @@ const Navbar = () => {
               onClick={() => {
                 setToggleNav(false);
                 document.body.classList.remove("modal-open");
+                router.push("/");
               }}
               className="toggleLink"
             >
