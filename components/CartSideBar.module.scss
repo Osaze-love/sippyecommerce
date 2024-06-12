@@ -1,0 +1,100 @@
+.cartSidebar {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: white;
+
+  height: 80vh;
+  z-index: 7;
+  .sidebarTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .sidebarHead {
+    display: flex;
+    align-items: center;
+  }
+}
+.cartMain {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  justify-content: space-between;
+  .cartImageContainer {
+    position: relative;
+    background-color: #fff9e5;
+    height: max-content;
+    width: max-content;
+  }
+  h3 {
+    font-size: 13px;
+  }
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  .cartContent {
+    width: 40%;
+  }
+}
+.deleteIcon {
+  cursor: pointer;
+}
+
+.cartSidebarBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1 1 0;
+  .cartSidebarBottomFirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+  }
+  .cartSidebarBottomButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    p {
+      border: 1px solid black;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 4px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .p2 {
+      margin-left: 2px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .cartSidebar {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .cartSidebar {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    height: 98vh;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+}

@@ -1,0 +1,31 @@
+.benefitContainer {
+  background-color: #faf4f4;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 60px;
+
+  p {
+    font-size: 14px;
+    width: 80%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px) {
+  .benefitContainer {
+    flex-direction: column;
+    div {
+      padding: 20px 0;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+}

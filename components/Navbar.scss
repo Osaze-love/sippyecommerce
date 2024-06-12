@@ -1,0 +1,78 @@
+.container {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70rem;
+}
+.menu {
+  color: white;
+}
+.closeMenu {
+  cursor: pointer;
+}
+.link {
+  list-style: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.toggleNav {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  z-index: 7;
+}
+
+.toggleNavItems {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.toggleLink {
+  list-style: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 20px 0;
+  border-bottom: 1px solid gray;
+}
+.iconLink {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .links {
+    display: none;
+  }
+  .iconLink {
+    padding: 10px 10px;
+  }
+  .menu {
+    color: black;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .links {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+}

@@ -1,0 +1,32 @@
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 90%;
+
+  p {
+    font-size: 15px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .productImage {
+    padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .productContainer {
+    p {
+      font-size: 15px;
+      width: auto;
+    }
+    h2 {
+      font-size: 20px;
+      width: auto;
+    }
+  }
+}

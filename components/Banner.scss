@@ -1,0 +1,19 @@
+.banner {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+.bannerImage {
+  z-index: -3;
+  object-fit: cover;
+}
+.bannerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  h2 {
+    font-size: xx-large;
+  }
+}

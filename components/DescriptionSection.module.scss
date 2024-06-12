@@ -1,0 +1,113 @@
+.description {
+  padding: 20px 120px;
+  background-color: #ffffff;
+  h2 {
+    padding: 10px 0;
+  }
+  p {
+    font-size: 15px;
+    color: #9f9f9f;
+  }
+}
+.Images {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ImageContainer {
+  position: relative;
+  background-color: #fff9e5;
+  height: max-content;
+  width: max-content;
+  margin-left: 10px;
+  .Image {
+    width: 100%;
+    margin: auto;
+    object-fit: contain;
+  }
+}
+.relatedProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  .viewMore {
+    border-bottom: 2px solid;
+    padding: 10px;
+    margin: 40px 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+.relatedProductsContainer {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .relatedProductsContainer {
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .description {
+    padding: 20px 40px;
+    background-color: #ffffff;
+    h2 {
+      padding: 10px 0;
+    }
+    p {
+      font-size: 14px;
+      color: #9f9f9f;
+    }
+  }
+  .Images {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .ImageContainer {
+    position: relative;
+    background-color: #fff9e5;
+    height: max-content;
+    width: 100%;
+    margin-left: 10px;
+    margin: 10px;
+    .Image {
+      width: 100%;
+      margin: auto;
+    }
+  }
+  .relatedProducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    .viewMore {
+      border-bottom: 2px solid;
+      padding: 10px;
+      margin: 40px 0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .relatedProductsContainer {
+    grid-template-columns: 6fr 6fr;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .relatedProductsContainer {
+    grid-template-columns: 12fr;
+    outline: none;
+  }
+}

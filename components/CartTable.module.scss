@@ -1,0 +1,22 @@
+.tableHead {
+  background-color: #fff9e5;
+  padding: 20px 0;
+}
+.tableBody {
+  padding: 20px 0;
+}
+.tableBodyProduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartImageContainer {
+  position: relative;
+  background-color: #fff9e5;
+  height: max-content;
+  width: max-content;
+}
+.tableBodyQty {
+  border: 1px solid #9f9f9f;
+  width: max-content;
+}
