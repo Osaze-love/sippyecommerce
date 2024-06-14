@@ -24,9 +24,11 @@ const DescriptionSection = () => {
   }, [dispatch, product]);
 
   const categoryToRemove = product?.id;
-  const filteredCategories = category.filter(
-    (item) => item.id !== categoryToRemove
-  );
+  const filteredCategories = category.filter((item) => {
+    if ("id" in item) {
+      return item.id !== categoryToRemove;
+    }
+  });
 
   const selectedCategories = filteredCategories.slice(0, 4);
 
