@@ -42,9 +42,7 @@ const ProductPage = () => {
     <div>
       {openCart && (
         <>
-          <div className={styles.overlay}>
-            <h2>tes</h2>
-          </div>
+          <div className={styles.overlay}></div>
           <CartSideBar setOpenCart={setOpenCart} />
         </>
       )}

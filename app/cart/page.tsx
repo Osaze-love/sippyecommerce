@@ -1,14 +1,16 @@
 import Banner from "@/components/Banner";
 import Benefits from "@/components/Benefits";
 import CartTable from "@/components/CartTable";
+import styles from "./page.module.scss";
+import CartTool from "@/components/CartTool";
 
 const page = () => {
   return (
     <div>
       <Banner pageName="Cart" />
-      <div>
+      <div className={styles.cartPage}>
         <CartTable />
-        <div></div>
+        <CartTool />
       </div>
       <Benefits />
     </div>

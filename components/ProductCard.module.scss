@@ -4,7 +4,9 @@
   align-items: center;
   cursor: pointer;
   width: 90%;
-
+  :active {
+    outline: none;
+  }
   p {
     font-size: 15px;
     width: 100%;

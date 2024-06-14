@@ -29,8 +29,8 @@ const Footer = () => {
         <div>
           <p className={styles.footerColor}>Newsletter</p>
           <div className={styles.footerNewsletter}>
-            <input type="text" placeholder="Enter Your Email Address" />
-            <button>SUBSCRIBE</button>
+            <p>Enter your Email Address</p>
+            <div>SUBSCRIBE</div>
           </div>
         </div>
       </div>

@@ -1,15 +1,25 @@
+.cartTable {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
 .tableHead {
   background-color: #fff9e5;
   padding: 20px 0;
+  margin: 10px 0;
 }
 .tableBody {
   padding: 20px 0;
+  td {
+    padding-left: 17px;
+  }
 }
 .tableBodyProduct {
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
 }
+
 .cartImageContainer {
   position: relative;
   background-color: #fff9e5;
@@ -19,4 +29,19 @@
 .tableBodyQty {
   border: 1px solid #9f9f9f;
   width: max-content;
+}
+.deleteIcon {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .cartTable {
+    width: 90%;
+  }
+  .tableBody {
+    padding: 20px 0;
+    td {
+      padding-left: 0;
+    }
+  }
 }

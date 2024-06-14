@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import styles from "./CartSideBar.module.scss";
 import { deleteCartItem, selectSubtotal } from "@/lib/features/cartSlice";
+import { useRouter } from "next/navigation";
 
 const CartSideBar = ({
   setOpenCart,
@@ -15,6 +16,7 @@ const CartSideBar = ({
   const dispatch = useDispatch<AppDispatch>();
   var subtotal = useSelector((state: RootState) => selectSubtotal(state));
   var subtotal = parseFloat(subtotal.toFixed(2));
+  const router = useRouter();
 
   return (
     <div className={styles.cartSidebar}>
@@ -78,8 +80,23 @@ const CartSideBar = ({
           <p>Rs {subtotal}</p>
         </div>
         <div className={styles.cartSidebarBottomButtons}>
-          <p>View Cart</p>
-          <p className={styles.p2}>Checkout</p>
+          <p
+            onClick={() => {
+              router.push("/cart");
+              document.body.classList.remove("modal-open");
+            }}
+          >
+            View Cart
+          </p>
+          <p
+            onClick={() => {
+              router.push("/checkout");
+              document.body.classList.remove("modal-open");
+            }}
+            className={styles.p2}
+          >
+            Checkout
+          </p>
         </div>
       </div>
     </div>

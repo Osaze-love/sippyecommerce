@@ -1,0 +1,21 @@
+.cartPage {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  padding: 40px 70px;
+}
+@media only screen and (max-width: 1200px) {
+  .cartPage {
+    grid-template-columns: 8fr 4fr;
+    padding: 40px 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .cartPage {
+    grid-template-columns: 12fr;
+    padding: 40px 30px;
+  }
+}

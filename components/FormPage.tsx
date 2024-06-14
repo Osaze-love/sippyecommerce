@@ -2,7 +2,7 @@ import styles from "./FormPage.module.scss";
 const FormPage = () => {
   return (
     <div className={styles.form}>
-      <h2>Billing Details</h2>
+      <h2 className={styles.formHead}>Billing Details</h2>
       <form>
         <div className={styles.formName}>
           <div>

@@ -3,6 +3,10 @@
   grid-template-columns: 6fr 6fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  justify-items: stretch;
-  align-items: stretch;
+}
+
+@media only screen and (max-width: 900px) {
+  .checkoutpage {
+    grid-template-columns: 12fr;
+  }
 }

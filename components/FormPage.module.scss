@@ -1,7 +1,11 @@
+.formHead {
+  font-size: 20px;
+}
 .form {
   display: flex;
   flex-direction: column;
   padding: 40px 70px;
+
   div {
     display: flex;
     flex-direction: column;
@@ -20,5 +24,21 @@
   }
   label {
     font-weight: bold;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .formHead {
+    font-size: 20px;
+  }
+  .form {
+    padding: 40px 40px;
+    .formName {
+      display: flex;
+      flex-direction: column;
+    }
+    .last {
+      padding: 10px 0;
+    }
   }
 }

@@ -29,19 +29,6 @@ const DescriptionSection = () => {
   );
 
   const selectedCategories = filteredCategories.slice(0, 4);
-  console.log(selectedCategories);
-  //   type productType = {
-  //     id: number;
-  //     description: string;
-  //     category: string;
-  //     sku: string;
-  //     thumbnail: string;
-  //     tags: [];
-  //     reviews: [];
-  //     title: string;
-  //     price: number;
-  //     images: string;
-  //   };
 
   return (
     <div>
